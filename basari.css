@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+
+html
+{
+	box-sizing:border-box;
+	margin-top: 100px;
+}
+body{
+	font-family: "Calibri";
+	margin: 0;
+	background: url(http://cinemusicompany.com/wp-content/uploads/2012/10/Cumhuriyet-Bayram%C4%B1-Havai-Fi%C5%9Fek-G%C3%B6sterisi-Marmara-Bo%C4%9Faz%C4%B1-Bo%C4%9Fazi%C3%A7i-K%C3%B6pr%C3%BCs%C3%BC-29-Ekim-2012-Photographs-by-B%C3%BClent-%C3%96zalp-with-5D-Mark-3-110.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+div#UstLogo{
+	margin: -100px 0 0 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	height: 75px;
+	background: #000000;
+	position: fixed;
+}
+ul{
+	list-style-type: none;
+	margin: -25px 0 0 0;
+	padding: 0;
+	width: 150px;
+	background-color: #B71518;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+ul li{
+	position: relative;
+}
+li a{
+	display: block;
+	color: #FFFFFF;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+li a:hover{
+	background-color: #B71518;
+	color: #FFFFFF;
+}
+li:hover ul{
+	opacity: 1;
+	visibility: visible;
+	position: relative;
+}
+li a.active{
+	background-color: #B71518;
+	color: #FFFFFF;
+}
+li a:hover:not(.active)
+{
+	background-color: #B71518;
+	color: #FFFFFF;
+}
+ul li ul{
+	left: 0px;
+	top: 0;
+	margin-top: 0px;
+	padding: 8px 0px;
+	opacity: 0;
+	transition: 250ms all;
+	visibility: hidden;
+	position: absolute;
+}
+.ogr1{
+	margin-left: 300px;
+	width: 200px;
+	height: 300px;
+	border-style: outset;
+	border-color: #D0161A;
+	border-width: 20px;
+}
+.ogr2{
+	margin-left: 1000px;
+	margin-top: -340px;
+	width: 200px;
+	height: 300px;
+	border-style: outset;
+	border-color: #D0161A;
+	border-width: 20px;
+}
+.ogr3{
+	margin-left: 650px;
+	margin-top: -340px;
+	width: 200px;
+	height: 300px;
+	border-style: outset;
+	border-color: #D0161A;
+	border-width: 20px;
+}
+.teb{
+	margin-left: 375px;
+	text-align: center;
+	font-size: 48px;
+}
+#prg{
+	margin-left: 50px;
+	margin-top: 10px;
+}
+.ilet{
+	margin-left: 450px;
+	margin-top: 0px;
+	text-align: center;
+	font-size: 48px;
+}
+#confetti{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+/*.mySlides{
+	margin:0;
+	margin-top: 25px;
+	margin-left:75px;
+	width: 100%;
+	height: 350px;
+}*/
+@media only screen and (max-width:1230px) and (min-width:990px){ 
+
+ }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+@media only screen and (max-width: 479px) {
+
+}

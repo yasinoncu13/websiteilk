@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link media="all" href="galeri.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="favicon(1).ico">
+<title>Matematik A+</title>
+</head>
+<body>
+
+<div class="Anasayfa">
+	<div id="UstLogo"><a href="index.html"><img src="logo.jpg" width="75" height="75" alt="Anasayfa"></a></div>
+	<div id="AltMenu">
+		<ul class="menu">
+			<li><a href="index.html">Anasayfa</a>
+			</li>
+			<li><a href="kurumsal.html">Kurumsal</a>
+				<ul>
+					<li><a href="kurumsal.html#misyon">Misyonumuz</a></li>
+					<li><a href="kurumsal.html#vizyon">Vizyonumuz</a></li>
+				</ul>
+			<li>
+				<a href="#">Tarihçe</a>
+			</li>
+			<li>
+				<a href="basari.html">Başarılarımız</a>
+			</li>
+			<li>
+				<a href="galeri.html">Galeri</a>
+			</li>
+			</li>
+			<li><a href="#">Hakkımızda</a>
+			</li>
+			<li>
+				<a href="iletisim.html">İletişim</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="67090851_1061734207354627_4529461934985435179_n.jpg">
+  <img class="mySlides" src="84174257_115011379878573_800557383200543854_n.jpg" >
+  <img class="mySlides" src="84332836_330913324481281_6288702452802235326_n.jpg">
+  <img class="mySlides" src="Yunus Hoca.JPG">
+<div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+  </div>
+</div>
+	
+
+<video class="video" controls><source class="videolar" src="MatematikA+ (@matematik__a) • Instagram fotoğrafları ve videoları.mp4" type="video/mp4"></video>
+
+<video class="video1" controls><source class="videolar" src="MatematikA+ (@matematik__a) • Instagram fotoğrafları ve videoları_2.mp4" type="video/mp4"></video>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>

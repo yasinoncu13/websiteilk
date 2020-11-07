@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" media="all" href="index.css">
+<link rel="shortcut icon" href="favicon(1).ico">
+<title>Matematik A+</title>
+</head>
+
+<body>
+<div class="Anasayfa">
+	<div id="UstLogo"><a href="index.html"><img src="logo.jpg" width="75" height="75" alt="Anasayfa"></a></div>
+	<div id="AltMenu">
+		<ul class="menu">
+			<li><a href="index.html">Anasayfa</a>
+			</li>
+			<li><a href="kurumsal.html">Kurumsal</a>
+				<ul>
+					<li><a href="kurumsal.html#misyon">Misyonumuz</a></li>
+					<li><a href="kurumsal.html#vizyon">Vizyonumuz</a></li>
+				</ul>
+			<li>
+				<a href="#">Tarihçe</a>
+			</li>
+			<li>
+				<a href="basari.html">Başarılarımız</a>
+			</li>
+			<li>
+				<a href="galeri.html">Galeri</a>
+			</li>
+			</li>
+			<li><a href="#">Hakkımızda</a>
+			</li>
+			<li>
+				<a href="iletisim.html">İletişim</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="49564347_233497577552606_3642753210049188874_n.jpg" width="50%" height="350px">
+  <img class="mySlides" src="84174257_115011379878573_800557383200543854_n.jpg" width="50%" height="350px">
+  <img class="mySlides" src="84344687_209444246925560_4307055433899686151_n.jpg" width="50%" height="350px">
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Geri</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">İleri ❯</button>
+  </div>
+  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+  <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+</div>
+<hr style="border-color: black">
+<h1><b>HOŞGELDİNİZ</b></h1>
+
+<h2>Biz Matematik A+ Özel Öğretim ve Kişisel Gelişim kursu olarak gençleri dinleyen,sorunlara çözüm üreten ve geleceğe yatırım yapan günümüzden ziyade geleceği dinleyen bir Aileyiz.Daha fazlası için <a href="#">tıklayınız.</a></h2>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+</body>
+</html>

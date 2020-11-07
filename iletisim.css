@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+
+html
+{
+	box-sizing:border-box;
+	margin-top: 75px;
+}
+body{
+	font-family: "Calibri";
+	margin: 0;
+}
+div#UstLogo{
+	margin: -75px 0 0 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+	height: 75px;
+	background: #000000;
+	position: fixed;
+}
+ul{
+	list-style-type: none;
+	margin: 0px 0 0 0;
+	padding: 0;
+	width: 150px;
+	background-color: #B71518;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+ul li{
+	position: relative;
+}
+li a{
+	display: block;
+	color: #FFFFFF;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+li a:hover{
+	background-color: #B71518;
+	color: #FFFFFF;
+}
+li:hover ul{
+	opacity: 1;
+	visibility: visible;
+	position: relative;
+}
+li a.active{
+	background-color: #B71518;
+	color: #FFFFFF;
+}
+li a:hover:not(.active)
+{
+	background-color: #B71518;
+	color: #FFFFFF;
+}
+ul li ul{
+	left: 0px;
+	top: 0;
+	margin-top: 0px;
+	padding: 8px 0px;
+	opacity: 0;
+	transition: 250ms all;
+	visibility: hidden;
+	position: absolute;
+}
+.Iletisim{
+	width:375px;
+	height:375px;
+	margin-left: 250px;
+	margin-top: 100px;
+}
+#baslik{
+	margin-left: 800px;
+	margin-top: -425px;
+}
+P{
+	margin-left: 800px;
+	font-size: 24px;
+}
+#adres{
+	font-size: 24px;
+	margin-left: -100px;
+	padding-left: -100px;
+}
+#tlf{
+	font-size: 24px;
+	margin-left: -100px;
+	padding-left: -100px;
+}
+.fa-phone{
+	height:36px;
+	width:36px;
+}
+.fa-building-o{
+	height:36px;
+	width: 36px;
+}
+.fa-instagram{
+	height:24px;
+	width: 24px;
+	margin-left: 10px;
+}
+#ikincia{
+	font-size: 24px;
+	margin-left: 806px;
+	padding-left: -100px;
+	margin-bottom: -25px;
+	margin-top: -15px;
+}
+#sm{
+	margin-left: 800px;
+}
+#Insta{
+	font-size: 24px;
+	margin-left: -100px;
+	padding-left: -100px;
+}
+.maps{
+	margin-left: 150px;
+}
+.konum{
+	margin-left: 700px;
+	margin-top: 225px;
+}
+@media only screen and (max-width:1230px) and (min-width:990px){ 
+
+ }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+@media only screen and (max-width: 479px) {
+
+}
